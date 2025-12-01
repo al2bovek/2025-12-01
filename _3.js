@@ -1,6 +1,5 @@
-// const { locales } = require("moment/moment");
-
 // ## 3. Normalize and modify product names **1 point**
+
 const products = [
     "  Super PHONE 3000 ",
     "mega-laptop",
@@ -15,4 +14,5 @@ const cleanFormatted = (arr) => {
         return temp;
     })
 }
+
 console.log(cleanFormatted(products));

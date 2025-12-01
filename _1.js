@@ -6,9 +6,8 @@ const transform = (arr) => {
     const lower = el.toLowerCase();
     const length = el.length;
     const hasNumber = el.split('').some(chr => chr == +chr);
-    return { original: el, lower: lower, length: length,  hasNumber: hasNumber}
+    return { original: el, lower: lower, length: length, hasNumber: hasNumber }
   })
-  
   return result;
 }
 

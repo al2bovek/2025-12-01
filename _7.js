@@ -5,21 +5,25 @@ const unit = document.querySelector("#unit");
 const celsius = document.querySelector('#celsius');
 const fahrenheit = document.querySelector('#fahrenheit');
 const btn = document.querySelector("#convert");
-value.addEventListener("focus", () =>  value.value = '');
+
+value.addEventListener("focus", () => value.value = '');
+
 let select = '';
+
 unit.addEventListener('click', (e) => select = e.target.value);
+
 const formula = (temp, unit = select) => {
-    if(!unit) unit = celsius.value;
-    let result = '';
+  if (!unit) unit = celsius.value;
+  let result = '';
   if (unit === "celsius") {
-    result = `${((temp * 9/5) + 32).toFixed(2)}° Celsius`;
+    result = `${((temp * 9 / 5) + 32).toFixed(2)}° Celsius`;
   } else {
-    result = `${((temp - 32) * 5/9).toFixed(2)}° Fahrenheit`;
+    result = `${((temp - 32) * 5 / 9).toFixed(2)}° Fahrenheit`;
   }
   return result;
 }
 
-btn.addEventListener("click", () => {result.textContent = formula(value.value)});
+btn.addEventListener("click", () => { result.textContent = formula(value.value) });
 
 
 

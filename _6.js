@@ -10,7 +10,8 @@ const flat = (arr) => {
     const result = [...arr].reduce((ac, el) => {
         ac.push(...el);
         return ac;
-    },[])
+    }, [])
     return result
 }
+
 console.log(flat(arrOfArrs));
