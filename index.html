@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- ## 7 DOM: Build a Temperature Converter  **3 points** -->
+
+    <div class="converter">
+      <p id="display">Converted result <span id="result"></span></p>
+      <label for="value">Temperature</label>
+      <input id="value" type="number" name="temperature" placeholder="temperature value" value="0"/>
+      <div class="unit">
+        <select name="unit" id="unit">
+          <option id="celsius" value="celsius">Celsius</option>
+          <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+        </select>
+      </div>
+      <button id="convert">convert the temperature</button>
+    </div>
+
+    <script src="_7.js"></script>
+  </body>
+</html>

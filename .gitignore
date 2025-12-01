@@ -1,0 +1,35 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS folder attributes
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Environment files
+.env
+# node modules
+node_modules
+# package-lock.json
+package-lock.json
